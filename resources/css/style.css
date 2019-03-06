@@ -15,6 +15,11 @@ body {
     line-height: 1.4;
 }
 
+.main-container  {
+    display: flex;
+    max-width: 100%;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -51,62 +56,62 @@ ul {
 ul li {
     display: inline;
     padding-right: 1rem;
-    color: black;
 }
 
-ul li:hover {
-    color: white;
+/* SECTION 1 */
+
+.section-1 {
+    background-color: rgba(168, 163, 163, 0.5);
 }
-
-/* HEADER 1 */
-
-.main-container  {
-    display: flex;
-    background-color: rgb(218, 216, 216);
-    width: 100%;
-}
-
 .banner {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-}
-
-img {
-    width: 60%;
-    margin: 2rem 1.5rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 10rem 0 1rem;
+    margin-left: 1.5rem;
 }
 
-.btn {
+.banner img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* SECTION 2 */
+.section-2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: black;
-    color: white;
-    padding: .5rem; 
-    margin: 1.5rem 10rem 1.5rem .1rem;
 }
 
-.btn:active {
-    background-color: rgba(230, 132, 3, 0.5);
-    color: black;
+.second-banner img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+    padding-right: 2rem;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
+.scnd-bnr-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    width: 60%;
+    padding-right: 10rem;
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 1rem;
+.scnd-bnr-text p {
+    margin: 1.5rem 0;
 }
+
+.scnd-bnr-text span {
+    margin-bottom: 2rem;
+}
+
+/* SECTION 2 SIDE INFO */
 
