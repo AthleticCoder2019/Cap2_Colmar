@@ -20,10 +20,6 @@ body {
     max-width: 100%;
 }
 
-#large-image {
-    width: 60%;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: 900;
@@ -77,8 +73,6 @@ li:hover {
     color: white;
 }
 
-
-
 /* SECTION 1 */
 
 .section-1 {
@@ -89,7 +83,7 @@ li:hover {
 }
  
 .banner img {
-    width: 100%;
+    width: 60%;
     margin: 2rem 1.5rem;
 }
 
@@ -98,8 +92,8 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5rem;
-    margin-right: 2rem;
-    width: 40%;
+    margin-right: 3rem;
+    width: 50%;
 }
 
 .content {
@@ -107,81 +101,98 @@ li:hover {
 
 }
 
-.content h4{
+.btn-start-here {
     background-color: black;
     background-size: 10rem;
     color: white;
     text-align: center;
-    margin: .5rem 12rem .5rem 0;
+    margin: .5rem 5rem .5rem 0;
 }
 
 h4:active {
     background-color: rgba(230, 132, 3, 0.5);
 }
 
-
-
-
-
-
 /* SECTION 2 */
 
 .section-2 {
-    border: solid black;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-direction: row wrap;
+}
+
+.second-banner {
+    width: 60%;
 }
 
 .second-banner img {
-    border: solid black;
-    width: 100%;
     margin: 2rem 1.5rem;
-    padding-right: 1.7rem;
-}
-
-#second-banner-text {
-    border: solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem;
     width: 60%;
-    padding-right: 10rem;
 }
 
-.scnd-bnr-text p {
-    margin: 1.5rem 0;
-    font-weight: 200;
+.second-banner h1 {
+    font-size: 1.7rem;
 }
 
-.scnd-bnr-text span {
-    margin-bottom: 2rem;
+.second-banner 
+h1, 
+p, .author{
+    margin-left: 1.5rem;
+}
+
+.second-banner p {
+    margin: 1.5rem;
+}
+
+.author {
     font-weight: 500;
 }
 
-
 /* SECTION 2 SIDE INFO */
 
-/* #side-info {
-    border: solid black;
-    display: flex;
-    flex-direction: row;
-} */
-
 #side-info {
-    border: solid black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 40%;
     width: 40%;
 }
 
-.desktop-image {
-    border: solid black;
-}
-
-#campus-text {
+.side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    position: relative;
+    left: 14rem;
+    bottom: 10rem;
 }
 
+#side-info img {
+    height: auto;
+    width: 35%;
+    margin: 1rem;
+}
+
+.side-text-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.side-text-2 {
+    margin-top: .5rem;
+}
+
+.side-text-3 {
+    margin-top: .5rem;
+    font-weight: 500;
+    color: rgba(0, 153, 255, 0.5);
+}
+
+.orientation {
+    background-color:  rgba(230, 132, 3, 0.5);
+    border-left: solid 6px rgba(168, 163, 163, 0.5);
+    border-bottom: solid 6px rgba(168, 163, 163, 0.5);
+}
+
+.lecture {
+    border-left: solid 6px rgba(168, 163, 163, 0.5);
+    border-top: solid 6px rgba(168, 163, 163, 0.5);
+    background-color: rgba(168, 163, 163, 0.5);
+}
