@@ -15,9 +15,24 @@ body {
     line-height: 1.4;
 }
 
-.main-container  {
+#main-container {
     display: flex;
     max-width: 100%;
+}
+
+#large-image {
+    width: 60%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
 }
 
 /* NAVIGATION */
@@ -58,48 +73,77 @@ ul li {
     padding-right: 1rem;
 }
 
+li:hover {
+    color: white;
+}
+
+
+
 /* SECTION 1 */
 
 .section-1 {
     background-color: rgba(168, 163, 163, 0.5);
-}
-.banner {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
+ 
+.banner img {
+    width: 100%;
+    margin: 2rem 1.5rem;
+}
 
-.content {
+#banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5rem;
+    margin-right: 2rem;
+    width: 40%;
 }
 
-.banner img {
-    width: 60%;
-    margin: 2rem 1.5rem;
-    padding-right: 1.5rem;
+.content {
+    margin-left: 1.5rem;
+
 }
+
+.content h4{
+    background-color: black;
+    background-size: 10rem;
+    color: white;
+    text-align: center;
+    margin: .5rem 12rem .5rem 0;
+}
+
+h4:active {
+    background-color: rgba(230, 132, 3, 0.5);
+}
+
+
+
+
 
 
 /* SECTION 2 */
+
 .section-2 {
+    border: solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 .second-banner img {
-    width: 60%;
+    border: solid black;
+    width: 100%;
     margin: 2rem 1.5rem;
-    padding-right: 2rem;
+    padding-right: 1.7rem;
 }
 
-.scnd-bnr-text {
+#second-banner-text {
+    border: solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 1.5rem;
     width: 60%;
     padding-right: 10rem;
@@ -107,11 +151,37 @@ ul li {
 
 .scnd-bnr-text p {
     margin: 1.5rem 0;
+    font-weight: 200;
 }
 
 .scnd-bnr-text span {
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
+
 /* SECTION 2 SIDE INFO */
+
+/* #side-info {
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+} */
+
+#side-info {
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+.desktop-image {
+    border: solid black;
+}
+
+#campus-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
