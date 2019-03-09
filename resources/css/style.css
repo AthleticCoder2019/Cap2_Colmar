@@ -31,6 +31,22 @@ h2 {
     margin: 1rem 0;
 }
 
+.courses .learning-image {
+    height: auto;
+    width: 100%;
+}
+
+.indiv-course {
+    border: solid black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 30%;
+    background-color: rgba(168, 163, 163, 0.863);
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -117,7 +133,8 @@ h4:active {
 
 .section-2 {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: column wrap;
+    position: relative;
 }
 
 .second-banner {
@@ -152,7 +169,6 @@ p, .author{
 #side-info {
     display: flex;
     flex-direction: column;
-    height: 40%;
     width: 40%;
 }
 
@@ -172,7 +188,7 @@ p, .author{
 
 .side-text-1 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .side-text-2 {
@@ -189,10 +205,60 @@ p, .author{
     background-color:  rgba(230, 132, 3, 0.5);
     border-left: solid 6px rgba(168, 163, 163, 0.5);
     border-bottom: solid 6px rgba(168, 163, 163, 0.5);
+    height: 22%;
+}
+
+.campus {
+    height: 22%;
 }
 
 .lecture {
-    border-left: solid 6px rgba(168, 163, 163, 0.5);
-    border-top: solid 6px rgba(168, 163, 163, 0.5);
     background-color: rgba(168, 163, 163, 0.5);
+    height: 22%;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    background-color: rgba(230, 132, 3, 0.5);
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    bottom: 15rem;
+}
+
+.learning {
+    margin: 2rem 4.5rem;
+}
+
+.learning .start {
+    position: relative;
+    left: 30rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.courses {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 4.5rem;
+}
+
+.crse-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.crse-link {
+    margin: .5rem;
+}
+
+.crse-link, .crse-description {
+    margin-left: 1rem;
+}
+
+.crse-description {
+    margin-bottom: 1.5rem;
 }
