@@ -84,6 +84,36 @@ li:hover {
     transition-property: all;
 }
 
+/* MEDIA QUERIES MIN-WIDTH: 900PX */
+
+@media only screen and (min-width: 900px)
+{
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+
+@media only screen and (max-width: 899px)
+{
+  .dark , .light {
+    display: none;
+  }
+  .logo img {
+    display: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    width: 70%;
+  }
+}
+
+
 /* SECTION 1 */
 
 #large-image {
@@ -112,6 +142,35 @@ h4:active {
   background-color: rgba(230, 132, 3, 0.5);
   color: black;
   transition-property: all;
+}
+
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+
+@media only screen and (max-width: 899px)
+{
+  #large-image {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  #large-image img {
+    width: auto;
+    margin: 0;
+  }
+
+  .banner-text {
+    width: 90%;
+    margin: 2rem auto 2rem 1rem;
+  }
+
+  .banner-text h2 {
+    margin-top: 2rem;
+  }
+
+  .banner-text h4 {
+    margin-top: 1.5rem;
+  }
 }
 
 /* SECTION 2 */
@@ -197,6 +256,35 @@ h4:active {
   color: white;
 }
 
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+@media only screen and (max-width: 899px)
+{
+  #large-column {
+    display: none;
+  }
+
+  .campus-articles {
+    width: auto;
+    margin: auto;
+  }
+
+  #campus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #campus img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+  }
+  #campus span {
+    margin-left: 1rem;
+  }
+}
+
 /* SECTION 3 */
 #headline {
   background-color: rgba(230, 132, 3, 0.5);
@@ -251,6 +339,39 @@ h4:active {
 .course-link:hover {
   color: rgba(14, 92, 210, 0.84);
 }
+
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+@media only screen and (max-width: 899px)
+{
+  #main-container .flex-row-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  #headline h1 {
+    font-size: 1.5rem;
+  }
+
+  #course {
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+
+  #course .flex-column {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  #course img, .course-link, .course-types {
+    display: none;
+  }
+
+  #course h3 {
+    font-size: 1rem;
+  }
+}
+
 /* SECTION 4 */
 
 #headline-2 {
@@ -308,6 +429,24 @@ h4:active {
   background-color: rgba(230, 132, 3, 0.5);
 }
 
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+@media only screen and (max-width: 899px)
+{
+  .urban, .urban-text {
+    display: none;
+  }
+
+  #sect-4-side {
+    display: none;
+  }
+
+  #reimagine {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+  
+}
+
 /* FOOTER */
 .legal {
   margin-top: 1rem;
@@ -324,4 +463,16 @@ h4:active {
 
 .terms span:first-child {
   padding-right: 1rem;
+}
+
+/* MEDIA QUERY MAX-WIDTH: 899PX */
+@media only screen and (max-width: 899px)
+{
+  .terms {
+    display: none;
+  }
+
+  .legal {
+    margin-bottom: 1rem;
+  }
 }
