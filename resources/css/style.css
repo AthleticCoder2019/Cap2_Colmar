@@ -16,8 +16,19 @@ body {
 }
 
 #main-container {
-    display: flex;
     max-width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -28,23 +39,6 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 1rem 0;
-}
-
-.courses .learning-image {
-    height: auto;
-    width: 100%;
-}
-
-.indiv-course {
-    border: solid black;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    width: 30%;
-    background-color: rgba(168, 163, 163, 0.863);
-    margin-right: 2rem;
-    margin-top: 2rem;
 }
 
 /* NAVIGATION */
@@ -87,178 +81,247 @@ ul li {
 
 li:hover {
     color: white;
+    transition-property: all;
 }
 
 /* SECTION 1 */
 
-.section-1 {
-    background-color: rgba(168, 163, 163, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+#large-image {
+  background-color: rgba(108, 108, 108, 0.6);
 }
- 
-.banner img {
-    width: 60%;
-    margin: 2rem 1.5rem;
+.flex-row img {
+  margin: 2rem 1.5rem;
+  width: 60%;
+  height: 60%;
 }
 
-#banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1.5rem;
-    margin-right: 3rem;
-    width: 50%;
+.banner-text {
+  margin: 10rem 1.5rem 4rem 1.5rem;
 }
 
-.content {
-    margin-left: 1.5rem;
-
-}
-
-.btn-start-here {
-    background-color: black;
-    background-size: 10rem;
-    color: white;
-    text-align: center;
-    margin: .5rem 5rem .5rem 0;
+.banner-text h4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: .5rem 0;
 }
 
 h4:active {
-    background-color: rgba(230, 132, 3, 0.5);
+  background-color: rgba(230, 132, 3, 0.5);
+  color: black;
+  transition-property: all;
 }
 
 /* SECTION 2 */
 
-.section-2 {
-    display: flex;
-    flex-direction: column wrap;
-    position: relative;
+#large-column {
+  width: 71%;
 }
 
-.second-banner {
-    width: 60%;
+
+#large-column img {
+  margin: 2rem 1.5rem;
+  width: 95.5%;
 }
 
-.second-banner img {
-    margin: 2rem 1.5rem;
-    width: 60%;
+#large-column
+ h1,
+ p {
+   margin-left: 1.5rem;
+   width: 90%;
+ }
+
+ #large-column p {
+   margin-top: 1.5rem;
+ }
+
+ #large-column h2 {
+   margin: 2rem 1.5rem;
+ }
+
+ /* SECTION 2 CAMPUS INFO */
+
+.campus-articles {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 1.5rem;
+  height: auto;
 }
 
-.second-banner h1 {
-    font-size: 1.7rem;
+ #campus img {
+   margin-right: 1rem;
+   width: 35%;
+ }
+
+#campus-info-text {
+  display: flex;
+  flex-direction: column;
+  /* top: 3rem;
+  height: 45%; */
+  width: 65%;
 }
 
-.second-banner 
-h1, 
-p, .author{
-    margin-left: 1.5rem;
+.side-1 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.second-banner p {
-    margin: 1.5rem;
+.side-2 {
+  margin-top: .5rem;
 }
 
-.author {
-    font-weight: 500;
+.side-3 {
+  font-weight: 500;
+  margin-top: .5rem;
 }
 
-/* SECTION 2 SIDE INFO */
-
-#side-info {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+.side-3:hover {
+  color: rgba(14, 92, 210, 0.84);
 }
 
-.side {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 14rem;
-    bottom: 10rem;
+.orientation-color,
+.our-close-campus-color,
+.guest-color {
+  align-content: center;
 }
 
-#side-info img {
-    height: auto;
-    width: 35%;
-    margin: 1rem;
+.orientation-color {
+  background-color: rgba(230, 132, 3, 0.5);
 }
 
-.side-text-1 {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.side-text-2 {
-    margin-top: .5rem;
-}
-
-.side-text-3 {
-    margin-top: .5rem;
-    font-weight: 500;
-    color: rgba(0, 153, 255, 0.5);
-}
-
-.orientation {
-    background-color:  rgba(230, 132, 3, 0.5);
-    border-left: solid 6px rgba(168, 163, 163, 0.5);
-    border-bottom: solid 6px rgba(168, 163, 163, 0.5);
-    height: 22%;
-}
-
-.campus {
-    height: 22%;
-}
-
-.lecture {
-    background-color: rgba(168, 163, 163, 0.5);
-    height: 22%;
+.guest-color {
+  background-color: black;
+  color: white;
 }
 
 /* SECTION 3 */
-
-.section-3 {
-    background-color: rgba(230, 132, 3, 0.5);
-    display: flex;
-    flex-flow: row;
-    position: relative;
-    bottom: 15rem;
+#headline {
+  background-color: rgba(230, 132, 3, 0.5);
 }
 
-.learning {
-    margin: 2rem 4.5rem;
+#headline h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
-.learning .start {
-    position: relative;
-    left: 25rem;
-    font-size: 2.5rem;
-    font-weight: 600;
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 2rem 4.5rem;
 }
 
-.courses {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 2rem 4.5rem;
+#course {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  background-color: white;
 }
 
-.crse-header {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    margin-left: 1rem;
+#course img {
+  height: auto;
+  width: 100%;
 }
 
-.crse-link {
-    margin: .5rem;
+#course h3,
+.course-link,
+.course-types{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.crse-link, .crse-description {
-    margin-left: 1rem;
+#course h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-.crse-description {
-    margin-bottom: 1.5rem;
+#course span {
+  margin-top: .5rem;
+}
+
+.course-types {
+  margin-bottom: 1.5rem;
+}
+
+.course-link:hover {
+  color: rgba(14, 92, 210, 0.84);
+}
+/* SECTION 4 */
+
+#headline-2 {
+  background-color: rgba(108, 108, 108, 0.6);
+}
+
+#headline-2 h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#thesis-exhibit {
+  margin-top: 2rem;
+}
+
+#reimagine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+#reimagine video {
+  width: 100%;
+
+}
+
+#reimagine span {
+  margin-top: .5rem;
+}
+
+#sect-4-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 1.5rem;
+}
+
+#sect-4-side img {
+  width: 35%;
+}
+
+.fisma {
+  background-color: black;
+  color: white;
+}
+
+.now-then {
+  background-color: rgba(230, 132, 3, 0.5);
+}
+
+/* FOOTER */
+.legal {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  font-size: .75rem;
+}
+
+.terms {
+  margin-top: 1rem;
+  margin-left: 54rem;
+  font-size: .75rem;
+}
+
+.terms span:first-child {
+  padding-right: 1rem;
 }
