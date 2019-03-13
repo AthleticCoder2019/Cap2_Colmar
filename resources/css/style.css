@@ -89,7 +89,6 @@ li:hover {
 #large-image {
   background-color: rgba(108, 108, 108, 0.6);
 }
-
 .flex-row img {
   margin: 2rem 1.5rem;
   width: 60%;
@@ -198,7 +197,6 @@ h4:active {
   color: white;
 }
 
-
 /* SECTION 3 */
 #headline {
   background-color: rgba(230, 132, 3, 0.5);
@@ -258,7 +256,6 @@ h4:active {
 #headline-2 {
   background-color: rgba(108, 108, 108, 0.6);
 }
-/* SECTION 4 */
 
 #headline-2 h1 {
   text-align: center;
@@ -270,18 +267,6 @@ h4:active {
   margin-top: 2rem;
 }
 
-=======
-#headline-2 h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-#thesis-exhibit {
-  margin-top: 2rem;
-}
-
->>>>>>> 6c1d9cd346a15c6814667cb276a1128c8c44c3dd
 #reimagine {
   display: flex;
   flex-direction: column;
@@ -291,7 +276,6 @@ h4:active {
   margin-right: 1.5rem;
   margin-bottom: 2rem;
   width: 60%;
-=======
 }
 
 #reimagine video {
